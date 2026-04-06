@@ -429,7 +429,7 @@ Runtime notes:
 - Expand feedback-aware calibration with larger local outcome sets and harder negatives
 - Add CI automation for tests and release checks
 
-## Engineering Value / Recruiter Value
+## Engineering Value
 
 MindGrid Voyager is useful as a hiring portfolio project because it demonstrates:
 
