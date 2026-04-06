@@ -1,0 +1,182 @@
+<svg width="1600" height="1040" viewBox="0 0 1600 1040" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1040" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="0.55" stop-color="#0A1830"/>
+      <stop offset="1" stop-color="#102344"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(370 120) rotate(43.4) scale(390 248)">
+      <stop stop-color="#7FE9FF" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#7FE9FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1240 860) rotate(43.4) scale(440 270)">
+      <stop stop-color="#6AA8FF" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#6AA8FF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#020713" flood-opacity="0.45"/>
+    </filter>
+    <filter id="panelGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="#6FDFFF" flood-opacity="0.18"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0L12 6L0 12" fill="#8FBBFF"/>
+    </marker>
+    <style>
+      .title { font: 800 52px 'Inter', 'Segoe UI', sans-serif; fill: #F3F8FF; letter-spacing: -1px; }
+      .subtitle { font: 500 20px 'Inter', 'Segoe UI', sans-serif; fill: #B8CAE9; }
+      .section { font: 700 18px 'Inter', 'Segoe UI', sans-serif; fill: #DDF2FF; letter-spacing: 2px; text-transform: uppercase; }
+      .label { font: 700 24px 'Inter', 'Segoe UI', sans-serif; fill: #F6FBFF; }
+      .body { font: 500 17px 'Inter', 'Segoe UI', sans-serif; fill: #C3D5F1; }
+      .small { font: 600 15px 'Inter', 'Segoe UI', sans-serif; fill: #94ABC8; }
+      .chip { font: 700 14px 'Inter', 'Segoe UI', sans-serif; fill: #D9F7FF; letter-spacing: 1.2px; }
+      .card { fill: rgba(19, 34, 60, 0.78); stroke: rgba(141, 182, 255, 0.22); stroke-width: 1.5; filter: url(#softShadow); }
+      .accent { fill: rgba(17, 41, 73, 0.82); stroke: rgba(112, 218, 255, 0.34); stroke-width: 1.7; filter: url(#panelGlow); }
+      .support { fill: rgba(14, 29, 52, 0.74); stroke: rgba(119, 156, 214, 0.2); stroke-width: 1.3; }
+      .line { stroke: rgba(143, 187, 255, 0.78); stroke-width: 3; stroke-linecap: round; marker-end: url(#arrow); }
+      .lineSoft { stroke: rgba(111, 223, 255, 0.46); stroke-width: 2.5; stroke-linecap: round; marker-end: url(#arrow); }
+      .dot { fill: #86E9FF; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1040" fill="url(#bg)"/>
+  <rect width="1600" height="1040" fill="url(#glowA)"/>
+  <rect width="1600" height="1040" fill="url(#glowB)"/>
+
+  <g opacity="0.30">
+    <circle cx="116" cy="120" r="2.4" class="dot"/>
+    <circle cx="220" cy="190" r="2.2" class="dot"/>
+    <circle cx="1310" cy="132" r="2.6" class="dot"/>
+    <circle cx="1450" cy="212" r="2.4" class="dot"/>
+    <circle cx="1260" cy="780" r="2.2" class="dot"/>
+    <circle cx="1390" cy="860" r="2.6" class="dot"/>
+    <path d="M110 120C170 120 196 170 220 190" stroke="#74D9FF" stroke-opacity="0.24" stroke-width="1.3"/>
+    <path d="M1310 132C1388 132 1410 184 1450 212" stroke="#74D9FF" stroke-opacity="0.24" stroke-width="1.3"/>
+    <path d="M1260 780C1324 780 1360 822 1390 860" stroke="#74D9FF" stroke-opacity="0.24" stroke-width="1.3"/>
+  </g>
+
+  <text x="100" y="86" class="section">MindGrid Voyager</text>
+  <text x="100" y="145" class="title">Simple AI Architecture View</text>
+  <text x="100" y="182" class="subtitle">How the agentic decision engine, ranking stack, grounding layer, and generative layer work together.</text>
+
+  <g transform="translate(100 240)">
+    <rect width="320" height="130" rx="28" class="accent"/>
+    <text x="34" y="44" class="section">Input</text>
+    <text x="34" y="84" class="label">User Trip Brief</text>
+    <text x="34" y="114" class="body">destination, budget, duration, interests,</text>
+    <text x="34" y="138" class="body">travel style, pace, currency</text>
+  </g>
+
+  <g transform="translate(500 210)">
+    <rect width="600" height="190" rx="30" class="accent"/>
+    <text x="34" y="44" class="section">Agentic Core</text>
+    <text x="34" y="86" class="label">Reasoning Engine</text>
+    <text x="34" y="120" class="body">Perceive  →  Reason  →  Plan  →  Act</text>
+    <text x="34" y="152" class="body">Coordinates scoring, safety, itinerary generation, grounding,</text>
+    <text x="34" y="176" class="body">verification, explanation, and result assembly.</text>
+  </g>
+
+  <g transform="translate(1180 240)">
+    <rect width="320" height="130" rx="28" class="accent"/>
+    <text x="34" y="44" class="section">Output</text>
+    <text x="34" y="84" class="label">Live Results UI</text>
+    <text x="34" y="114" class="body">destination ranking, decision score,</text>
+    <text x="34" y="138" class="body">evidence, workflow, itinerary, debug trace</text>
+  </g>
+
+  <path d="M420 305H470" class="line"/>
+  <path d="M1100 305H1150" class="line"/>
+
+  <g transform="translate(100 490)">
+    <rect width="260" height="146" rx="24" class="card"/>
+    <text x="24" y="38" class="section">Discovery</text>
+    <text x="24" y="74" class="label">Source Discovery</text>
+    <text x="24" y="106" class="body">Destination intelligence, seed profiles,</text>
+    <text x="24" y="130" class="body">fallback exploration context</text>
+  </g>
+
+  <g transform="translate(390 490)">
+    <rect width="260" height="146" rx="24" class="card"/>
+    <text x="24" y="38" class="section">Risk</text>
+    <text x="24" y="74" class="label">Risk Analyzer</text>
+    <text x="24" y="106" class="body">Safety confidence, pace-aware risk,</text>
+    <text x="24" y="130" class="body">practical travel constraints</text>
+  </g>
+
+  <g transform="translate(680 490)">
+    <rect width="260" height="146" rx="24" class="card"/>
+    <text x="24" y="38" class="section">Planning</text>
+    <text x="24" y="74" class="label">Prioritize + Itinerary</text>
+    <text x="24" y="106" class="body">Rank destinations, attractions, cafes,</text>
+    <text x="24" y="130" class="body">and generate the day-wise plan</text>
+  </g>
+
+  <g transform="translate(970 490)">
+    <rect width="260" height="146" rx="24" class="card"/>
+    <text x="24" y="38" class="section">Grounding</text>
+    <text x="24" y="74" class="label">Grounding Engine</text>
+    <text x="24" y="106" class="body">Seeded passages + official API snippets</text>
+    <text x="24" y="130" class="body">from YouTube and Reddit when enabled</text>
+  </g>
+
+  <g transform="translate(1260 490)">
+    <rect width="240" height="146" rx="24" class="card"/>
+    <text x="24" y="38" class="section">Verification</text>
+    <text x="24" y="74" class="label">Source Verification</text>
+    <text x="24" y="106" class="body">Trust, freshness, citations,</text>
+    <text x="24" y="130" class="body">legal grounding labels</text>
+  </g>
+
+  <path d="M230 430V472" class="lineSoft"/>
+  <path d="M520 430V472" class="lineSoft"/>
+  <path d="M810 430V472" class="lineSoft"/>
+  <path d="M1100 430V472" class="lineSoft"/>
+  <path d="M1380 430V472" class="lineSoft"/>
+
+  <g transform="translate(100 715)">
+    <rect width="420" height="190" rx="28" class="accent"/>
+    <text x="28" y="42" class="section">ML / Ranking Layer</text>
+    <text x="28" y="82" class="label">Feature Engineering + Ranking Model</text>
+    <text x="28" y="114" class="body">Builds explicit trip features, scores with a blended</text>
+    <text x="28" y="138" class="body">prior + learned ranker, and exposes explainable</text>
+    <text x="28" y="162" class="body">feature contributions for the final recommendation.</text>
+  </g>
+
+  <g transform="translate(560 715)">
+    <rect width="360" height="190" rx="28" class="accent"/>
+    <text x="28" y="42" class="section">Confidence</text>
+    <text x="28" y="82" class="label">Calibration Engine</text>
+    <text x="28" y="114" class="body">Adjusts confidence with local benchmark and</text>
+    <text x="28" y="138" class="body">feedback-aware calibration so score certainty</text>
+    <text x="28" y="162" class="body">is more honest than raw model output.</text>
+  </g>
+
+  <g transform="translate(960 715)">
+    <rect width="540" height="190" rx="28" class="accent"/>
+    <text x="28" y="42" class="section">Gen-AI Layer</text>
+    <text x="28" y="82" class="label">Generative Experience Engine</text>
+    <text x="28" y="114" class="body">Turns the structured decision output into a mission brief,</text>
+    <text x="28" y="138" class="body">decision narrative, agent playbook, and memory/journal layer.</text>
+    <text x="28" y="168" class="small">Optional live model provider via the LLM gateway, with local fallback.</text>
+  </g>
+
+  <path d="M520 810H544" class="line"/>
+  <path d="M920 810H944" class="line"/>
+
+  <g transform="translate(1180 70)">
+    <rect width="320" height="114" rx="26" class="support"/>
+    <text x="28" y="42" class="section">Adaptive Loop</text>
+    <text x="28" y="76" class="label">Feedback + Replan</text>
+    <text x="28" y="104" class="body">User feedback refreshes local ranking and</text>
+    <text x="28" y="128" class="body">calibration artifacts at runtime.</text>
+  </g>
+
+  <path d="M1340 184V220" class="lineSoft"/>
+  <path d="M1180 300C1110 300 1060 306 1026 348" class="lineSoft"/>
+  <path d="M1340 300C1370 420 1366 570 1332 650" class="lineSoft"/>
+
+  <g transform="translate(80 954)">
+    <rect width="1440" height="44" rx="20" fill="rgba(13, 24, 43, 0.68)" stroke="rgba(133, 181, 255, 0.18)"/>
+    <text x="30" y="29" class="chip">MindGrid Voyager architecture: input → orchestration → ranking + grounding → calibration → generative explanation → UI → feedback refresh</text>
+  </g>
+</svg>

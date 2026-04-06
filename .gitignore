@@ -1,0 +1,45 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments and local env files
+.env
+.env.*
+.venv/
+venv/
+env/
+ENV/
+
+# Test and tooling caches
+.pytest_cache/
+pytest-cache-files-*/
+.coverage
+.mypy_cache/
+.ruff_cache/
+tmp_video_frames/
+
+# Build output
+build/
+dist/
+node_modules/
+
+# Editors and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Runtime data and logs
+*.db
+*.db-journal
+*.log
+data/*
+!data/.gitkeep
+logs/*
+!logs/.gitkeep
+history/
+
+# Python packaging leftovers
+*.egg-info/
+pip-wheel-metadata/

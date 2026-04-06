@@ -1,0 +1,3 @@
+# MindGrid Voyager uses the Python standard library for runtime.
+# Pytest is included so the local test suite can run after installation.
+pytest==9.0.2

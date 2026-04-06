@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindGrid Voyager | AI Decision Platform</title>
+  <meta
+    name="description"
+    content="MindGrid Voyager is a local-first AI decision engine for destination intelligence, explainable rankings, premium travel recommendations, and modern portfolio-grade product design."
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="ambient ambient-c"></div>
+
+  <div class="app-shell">
+    <header class="site-header glass">
+      <a class="brand" href="#top" aria-label="MindGrid Voyager home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg class="brand-logo" viewBox="0 0 64 64" role="presentation">
+            <defs>
+              <linearGradient id="brandLogoGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f7fdff"></stop>
+                <stop offset="52%" stop-color="#9be5ff"></stop>
+                <stop offset="100%" stop-color="#7b9dff"></stop>
+              </linearGradient>
+            </defs>
+            <circle cx="32" cy="32" r="22" fill="rgba(255,255,255,0.08)"></circle>
+            <circle cx="32" cy="32" r="18.5" fill="none" stroke="url(#brandLogoGlow)" stroke-width="4.2"></circle>
+            <path
+              d="M16.5 43.8 24.4 31.8 29.4 38.6 36.8 25.8 47.8 43.8"
+              fill="none"
+              stroke="#06101f"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              opacity="0.86"
+            ></path>
+            <path
+              d="M18.2 44.6h28.9"
+              fill="none"
+              stroke="#06101f"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              opacity="0.44"
+            ></path>
+            <path
+              class="brand-logo-route"
+              d="M19.8 39.6c4.2-2.8 8.3-4.6 12-5.2 4.6-.8 8.6.2 13.4 3.6"
+              fill="none"
+              stroke="#06101f"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-dasharray="1.2 4.8"
+              opacity="0.82"
+            ></path>
+            <circle cx="19.6" cy="39.8" r="2.2" fill="#06101f"></circle>
+            <circle cx="44.9" cy="37.8" r="2.4" fill="#06101f"></circle>
+            <path
+              class="brand-logo-star"
+              d="M47.8 16.5 49.4 20 53.1 20.4 50.4 22.9 51.1 26.6 47.8 24.8 44.6 26.6 45.2 22.9 42.6 20.4 46.2 20Z"
+              fill="url(#brandLogoGlow)"
+            ></path>
+            <path
+              d="M40.4 23.8c1.8-1.6 3.6-3 5.8-4.4"
+              fill="none"
+              stroke="#06101f"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              opacity="0.62"
+            ></path>
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <strong>MindGrid Voyager</strong>
+          <span>Agentic travel intelligence</span>
+        </span>
+        <span class="brand-buddy" aria-hidden="true">
+          <svg class="brand-buddy-art" viewBox="0 0 72 72" role="presentation">
+            <defs>
+              <linearGradient id="buddyStarFill" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#fffdf5"></stop>
+                <stop offset="58%" stop-color="#ffe8a8"></stop>
+                <stop offset="100%" stop-color="#ffd171"></stop>
+              </linearGradient>
+            </defs>
+            <ellipse cx="36" cy="59" rx="16" ry="5.2" fill="rgba(118, 210, 255, 0.22)"></ellipse>
+            <circle class="brand-buddy-spark" cx="36" cy="8" r="3.2" fill="#dff8ff"></circle>
+            <path class="brand-buddy-star"
+              d="M36 12.5 41.9 24l13 1.8-9.4 8.9 2.4 13-11.3-5.9-11.3 5.9 2.4-13-9.4-8.9 13-1.8Z"
+              fill="url(#buddyStarFill)"
+            ></path>
+            <path
+              d="M36 15.2 41.1 25.1l11.3 1.6-8.2 7.8 2.1 11.3-9.8-5.1-9.8 5.1 2.1-11.3-8.2-7.8 11.3-1.6Z"
+              fill="none"
+              stroke="#fff7dc"
+              stroke-width="1.6"
+              opacity="0.76"
+            ></path>
+            <circle class="brand-buddy-eye" cx="31.6" cy="29.8" r="2.35" fill="#06101f"></circle>
+            <circle class="brand-buddy-eye" cx="40.4" cy="29.8" r="2.35" fill="#06101f"></circle>
+            <circle class="brand-buddy-cheek" cx="27.8" cy="34.4" r="2.05" fill="#ffd7df" opacity="0.82"></circle>
+            <circle class="brand-buddy-cheek" cx="44.2" cy="34.4" r="2.05" fill="#ffd7df" opacity="0.82"></circle>
+            <path d="M31.4 37.3c2.1 2 7.1 2 9.2 0" fill="none" stroke="#06101f" stroke-width="2.05" stroke-linecap="round"></path>
+            <path d="M23.6 31.5 18 35.6" fill="none" stroke="#9fe8ff" stroke-width="2.8" stroke-linecap="round"></path>
+            <path d="M48.4 31.5 54 35.6" fill="none" stroke="#9fe8ff" stroke-width="2.8" stroke-linecap="round"></path>
+            <path d="M30.4 44.6 26.8 51.8" fill="none" stroke="#9fe8ff" stroke-width="2.8" stroke-linecap="round"></path>
+            <path d="M41.6 44.6 45.2 51.8" fill="none" stroke="#9fe8ff" stroke-width="2.8" stroke-linecap="round"></path>
+            <circle cx="18" cy="16.5" r="2.1" fill="#c8f5ff" opacity="0.78"></circle>
+            <circle cx="56" cy="15" r="1.8" fill="#c8f5ff" opacity="0.7"></circle>
+          </svg>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#how-it-works">Workflow</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#compare">Compare</a>
+        <a href="#explore">Live Results</a>
+        <a href="#architecture">Architecture</a>
+      </nav>
+
+      <div class="header-meta">
+        <div class="status-dock glass" aria-label="Live engine status">
+          <span class="status-pulse" aria-hidden="true"></span>
+          <div class="status-copy">
+            <span class="status-label">LIVE ENGINE</span>
+            <span class="status-pill" id="apiStatus">Checking local API...</span>
+          </div>
+          <span class="status-micro">MULTI-SOURCE ACTIVE</span>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section reveal">
+        <div class="hero-copy">
+          <p class="hero-kicker">Local-first AI decision platform</p>
+          <h1 class="hero-title">MindGrid Voyager</h1>
+          <p class="hero-caption">Exploring the world through intelligent decisions.</p>
+          <p class="hero-text hero-description">
+            A calm decision engine for destination intelligence, comparison, and explainable travel guidance.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#explore">Open Live Results</a>
+            <a class="btn btn-secondary" href="#compare">Compare Destinations</a>
+          </div>
+
+          <div class="hero-chips" aria-label="Trust signals">
+            <span>Agentic orchestration</span>
+            <span>Explainable reasoning</span>
+            <span>Local Python runtime</span>
+            <span>Recruiter-ready build</span>
+          </div>
+
+          <div class="hero-proof glass">
+            <article>
+              <span>Workflow</span>
+              <strong>Discover → Explain</strong>
+              <p>Visible reasoning, not black-box output.</p>
+            </article>
+            <article>
+              <span>Coverage</span>
+              <strong>7 seeded destinations</strong>
+              <p>Rich demo intelligence with graceful fallback.</p>
+            </article>
+            <article>
+              <span>Runtime</span>
+              <strong>100% local</strong>
+              <p>Python backend, logs, history, and explainability.</p>
+            </article>
+          </div>
+        </div>
+
+        <aside class="hero-visual glass">
+          <div class="hero-prompt-head">
+            <div>
+              <p class="eyebrow">AI prompt interface</p>
+              <h2>Start with a trip brief</h2>
+            </div>
+            <span class="hero-panel-pill">Live</span>
+          </div>
+
+          <form class="hero-prompt-form" id="heroPromptForm">
+            <label class="hero-input hero-input-large" for="heroPromptDestination">
+              <span>Destination</span>
+              <input id="heroPromptDestination" type="text" placeholder="Tokyo">
+            </label>
+
+            <label class="hero-input" for="heroPromptInterests">
+              <span>What matters most?</span>
+              <textarea
+                id="heroPromptInterests"
+                rows="3"
+                placeholder="food, culture, walkable, low-friction neighborhoods"
+              >food, culture, walkable, local</textarea>
+            </label>
+
+            <div class="hero-prompt-grid">
+              <label class="hero-input" for="heroPromptBudget">
+                <span>Budget</span>
+                <div class="budget-inline-group">
+                  <input id="heroPromptBudget" type="number" min="50" step="10" value="1800">
+                  <select id="heroPromptCurrency" aria-label="Hero budget currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="INR">INR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="SGD">SGD</option>
+                    <option value="AED">AED</option>
+                    <option value="THB">THB</option>
+                    <option value="IDR">IDR</option>
+                  </select>
+                </div>
+              </label>
+              <label class="hero-input" for="heroPromptDuration">
+                <span>Duration</span>
+                <input id="heroPromptDuration" type="number" min="1" max="21" value="4">
+              </label>
+            </div>
+
+            <div class="hero-prompt-grid">
+              <label class="hero-input" for="heroPromptTravelStyle">
+                <span>Travel style</span>
+                <select id="heroPromptTravelStyle">
+                  <option>Balanced Explorer</option>
+                  <option>Food Scout</option>
+                  <option>Budget Hunter</option>
+                  <option>Luxury Escape</option>
+                  <option>Culture First</option>
+                </select>
+              </label>
+              <label class="hero-input" for="heroPromptPace">
+                <span>Pace</span>
+                <select id="heroPromptPace">
+                  <option value="balanced">Balanced</option>
+                  <option value="slow">Slow</option>
+                  <option value="fast">Fast</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="hero-suggestion-row" aria-label="Seed destination suggestions">
+              <button type="button" class="hero-suggestion" data-hero-destination="Bangkok">Bangkok</button>
+              <button type="button" class="hero-suggestion" data-hero-destination="Tokyo">Tokyo</button>
+              <button type="button" class="hero-suggestion" data-hero-destination="Bali">Bali</button>
+              <button type="button" class="hero-suggestion" data-hero-destination="Dubai">Dubai</button>
+              <button type="button" class="hero-suggestion" data-hero-destination="Singapore">Singapore</button>
+              <button type="button" class="hero-suggestion" data-hero-destination="Paris">Paris</button>
+            </div>
+
+            <button class="btn btn-primary hero-submit" id="heroPromptButton" type="submit">Run Decision Engine</button>
+            <p class="hero-prompt-status" id="heroPromptStatus" aria-live="polite">
+              This routes into the live recommendation flow below using the same backend decision engine.
+            </p>
+          </form>
+
+          <div class="hero-stage-strip" aria-hidden="true">
+            <span>Discover</span>
+            <span>Verify</span>
+            <span>Prioritize</span>
+            <span>Explain</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section reveal" id="capabilities">
+        <div class="section-heading">
+          <p class="eyebrow">Capabilities</p>
+          <h2>One platform. Multiple intelligence layers.</h2>
+          <p>Every surface supports the same outcome: clearer, better-informed travel decisions.</p>
+        </div>
+
+        <div class="bento-grid">
+          <article class="bento-card bento-card-wide">
+            <span class="pill">01</span>
+            <h3>Destination Intelligence</h3>
+            <p>Ranks cities and neighborhoods using seeded travel knowledge, explainable rules, and future-ready module boundaries.</p>
+          </article>
+          <article class="bento-card">
+            <span class="pill">02</span>
+            <h3>Budget Optimization</h3>
+            <p>Converts trip budget into per-day guidance and suggested allocation ranges.</p>
+          </article>
+          <article class="bento-card">
+            <span class="pill">03</span>
+            <h3>Smart Itinerary Generator</h3>
+            <p>Builds day-wise plans based on duration, pace, and ranked experiences.</p>
+          </article>
+          <article class="bento-card">
+            <span class="pill">04</span>
+            <h3>Food &amp; Cafe Discovery</h3>
+            <p>Surfaces strong dining and cafe options as part of the journey, not as an afterthought.</p>
+          </article>
+          <article class="bento-card">
+            <span class="pill">05</span>
+            <h3>Local Favorites Engine</h3>
+            <p>Highlights neighborhood texture, lower-friction finds, and softer local moments.</p>
+          </article>
+          <article class="bento-card">
+            <span class="pill">06</span>
+            <h3>Safety &amp; Risk Alerts</h3>
+            <p>Provides practical risk notes, transport guidance, and pace-aware safety signals.</p>
+          </article>
+          <article class="bento-card">
+            <span class="pill">07</span>
+            <h3>Social Media Recommendation Engine</h3>
+            <p>Future-ready signal layer for blending crowd energy, local buzz, and high-signal social discovery into decisions.</p>
+          </article>
+          <article class="bento-card">
+            <span class="pill">08</span>
+            <h3>Real-time Navigation Assistant</h3>
+            <p>Prepared for live routing, transport awareness, and route-confidence overlays across the trip arc.</p>
+          </article>
+          <article class="bento-card">
+            <span class="pill">09</span>
+            <h3>Personalized Experience Planner</h3>
+            <p>Combines interests, pace, and travel style into a more personal trip logic instead of generic tourism output.</p>
+          </article>
+          <article class="bento-card bento-card-wide">
+            <span class="pill">10</span>
+            <h3>Memory / Trip Journal Generator</h3>
+            <p>Turns recommended moments into memorable narratives, making the product feel like an intelligent companion instead of a static planner.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="how-it-works">
+        <div class="section-heading">
+          <p class="eyebrow">Workflow</p>
+          <h2>See how the engine thinks.</h2>
+          <p>Each stage contributes to the final recommendation and keeps the ranking easy to trust.</p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card">
+            <span>01</span>
+            <h3>Discover</h3>
+            <p>Collect destination, budget, duration, interests, and travel style, then enrich the query with seeded destination intelligence and source discovery signals.</p>
+          </article>
+          <article class="process-card">
+            <span>02</span>
+            <h3>Verify</h3>
+            <p>Run safety checks, destination recognition, and confidence scoring so the system can distinguish trustworthy recommendations from weaker matches.</p>
+          </article>
+          <article class="process-card">
+            <span>03</span>
+            <h3>Prioritize</h3>
+            <p>Rank attractions, food, local favorites, and itinerary arcs using budget fit, relevance, popularity, and pace-aware decision logic.</p>
+          </article>
+          <article class="process-card">
+            <span>04</span>
+            <h3>Explain</h3>
+            <p>Return a structured recommendation with decision score, reasoning summary, workflow steps, evidence signals, and traceability for inspection.</p>
+          </article>
+        </div>
+
+        <div class="trust-grid">
+          <article class="trust-card glass">
+            <p class="eyebrow">Why trust this engine</p>
+            <h3>Explainable over theatrical</h3>
+            <p>Every output is backed by visible workflow logic, making the product more credible for users, recruiters, and future engineering iteration.</p>
+          </article>
+          <article class="trust-card glass">
+            <p class="eyebrow">Engineering edge</p>
+            <h3>Recruiter-friendly system design</h3>
+            <p>It demonstrates modular Python services, orchestration architecture, persistence, observability, and product-quality frontend execution in one project.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="preview">
+        <div class="section-heading">
+          <p class="eyebrow">Product preview</p>
+          <h2>A calm, minimal preview of the AI decision engine.</h2>
+          <p>Compact inputs on the left. Ranked output on the right. The live experience starts below.</p>
+        </div>
+
+        <div class="preview-layout">
+          <article class="preview-form-card glass">
+            <div class="preview-panel-head">
+              <div>
+                <p class="eyebrow">Trip setup</p>
+                <h3>Fast mission input</h3>
+              </div>
+              <span class="preview-status">Preview</span>
+            </div>
+
+            <div class="preview-form-grid">
+              <div class="preview-field">
+                <span>Destination</span>
+                <div class="preview-value">Tokyo</div>
+              </div>
+              <div class="preview-field">
+                <span>Budget</span>
+                <div class="preview-value">$1,800</div>
+              </div>
+              <div class="preview-field">
+                <span>Duration</span>
+                <div class="preview-value">4 days</div>
+              </div>
+              <div class="preview-field">
+                <span>Pace</span>
+                <div class="preview-value">Balanced</div>
+              </div>
+            </div>
+
+            <div class="preview-chip-row" aria-label="Preview interests">
+              <span class="preview-chip">Food</span>
+              <span class="preview-chip">Culture</span>
+              <span class="preview-chip">Design</span>
+              <span class="preview-chip">Walkable</span>
+            </div>
+
+            <p class="preview-note">Live recommendations are generated in the section below.</p>
+            <a class="btn btn-secondary preview-cta" href="#explore">Open Live Engine</a>
+          </article>
+
+          <div class="preview-output">
+            <article class="preview-recommendation-card glass">
+              <div class="preview-recommendation-top">
+                <div class="preview-destination">
+                  <span class="destination-label">Top match</span>
+                  <h3>Tokyo</h3>
+                </div>
+                <span class="decision-badge priority-high">High priority</span>
+              </div>
+
+              <div class="preview-score-panel">
+                <span>Decision score</span>
+                <strong>91.4</strong>
+              </div>
+
+              <p class="preview-explanation">High-confidence fit for food, design, and low-friction city exploration.</p>
+            </article>
+
+            <div class="preview-mini-grid">
+              <article class="preview-mini-card">
+                <span>Budget</span>
+                <strong>90%</strong>
+              </article>
+              <article class="preview-mini-card">
+                <span>Local signal</span>
+                <strong>94%</strong>
+              </article>
+              <article class="preview-mini-card">
+                <span>Safety</span>
+                <strong>95%</strong>
+              </article>
+              <article class="preview-mini-card">
+                <span>Itinerary</span>
+                <strong>4 days</strong>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="explore">
+        <div class="section-heading">
+          <p class="eyebrow">Live results</p>
+          <h2>Inspect the decision output in layers.</h2>
+          <p>Summary first. Evidence next. Itinerary and support details underneath.</p>
+        </div>
+
+        <div class="explore-layout">
+          <form class="control-panel glass" id="recommendationForm">
+            <div class="control-header">
+              <h3>Plan a trip mission</h3>
+              <p>Use a seed destination or enter your own.</p>
+            </div>
+
+            <div class="quick-destinations">
+              <button type="button" class="quick-chip" data-destination="Bangkok">Bangkok</button>
+              <button type="button" class="quick-chip" data-destination="Tokyo">Tokyo</button>
+              <button type="button" class="quick-chip" data-destination="Bali">Bali</button>
+              <button type="button" class="quick-chip" data-destination="Dubai">Dubai</button>
+              <button type="button" class="quick-chip" data-destination="Singapore">Singapore</button>
+              <button type="button" class="quick-chip" data-destination="Paris">Paris</button>
+              <button type="button" class="quick-chip" data-destination="Goa">Goa</button>
+            </div>
+
+            <div class="field-grid">
+              <label class="field">
+                <span>Destination</span>
+                <input id="destinationInput" name="destination" type="text" placeholder="Tokyo" required>
+              </label>
+              <label class="field">
+                <span>Budget</span>
+                <div class="budget-inline-group">
+                  <input name="budget" type="number" min="50" step="10" value="1800" required>
+                  <select name="currency" aria-label="Recommendation budget currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="INR">INR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="SGD">SGD</option>
+                    <option value="AED">AED</option>
+                    <option value="THB">THB</option>
+                    <option value="IDR">IDR</option>
+                  </select>
+                </div>
+              </label>
+            </div>
+
+            <div class="field-grid">
+              <label class="field">
+                <span>Duration (days)</span>
+                <input name="duration" type="number" min="1" max="21" value="4" required>
+              </label>
+              <label class="field">
+                <span>Travel style</span>
+                <select name="travelStyle">
+                  <option>Balanced Explorer</option>
+                  <option>Food Scout</option>
+                  <option>Budget Hunter</option>
+                  <option>Luxury Escape</option>
+                  <option>Culture First</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="field-grid">
+              <label class="field">
+                <span>Pace</span>
+                <select name="pace">
+                  <option value="balanced">Balanced</option>
+                  <option value="slow">Slow</option>
+                  <option value="fast">Fast</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Interests</span>
+                <input name="interests" type="text" value="food, culture, walkable, local" placeholder="food, art, nightlife, scenic">
+              </label>
+            </div>
+
+            <button class="btn btn-primary" id="recommendationButton" type="submit">Generate AI Exploration Plan</button>
+            <p class="form-status" id="recommendationStatus" aria-live="polite"></p>
+          </form>
+
+          <section class="results-shell glass" id="resultsShell" data-state="empty">
+            <div class="results-state" id="resultsEmpty">
+              <p class="eyebrow">Empty state</p>
+              <h3>Your recommendation canvas is ready.</h3>
+              <p>Choose a destination, set your trip constraints, and generate a structured exploration plan.</p>
+            </div>
+
+            <div class="results-state" id="resultsLoading" hidden>
+              <p class="eyebrow">Generating intelligence</p>
+              <div class="loading-stack">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="loading-steps" aria-hidden="true">
+                <span>Discover</span>
+                <span>Verify</span>
+                <span>Prioritize</span>
+                <span>Explain</span>
+              </div>
+              <p>The decision engine is collecting signals, evaluating safety and relevance, planning the route, and assembling the final recommendation.</p>
+            </div>
+
+            <div class="results-state" id="resultsError" hidden>
+              <p class="eyebrow">Something needs attention</p>
+              <h3>Recommendation request failed.</h3>
+              <p id="resultsErrorMessage">Try again with a valid destination, budget, and duration.</p>
+            </div>
+
+            <div class="results-state results-success" id="resultsSuccess" hidden>
+              <section class="results-overview-grid results-overview-grid-stack">
+                <article class="result-card result-card-wide results-overview-card">
+                  <div class="card-head">
+                    <div>
+                      <p class="eyebrow">Top ranked destination</p>
+                      <h4 id="summaryTopDestination">Tokyo</h4>
+                    </div>
+                    <span class="decision-badge" id="summaryTopPriority">High priority</span>
+                  </div>
+                  <p id="summaryWhyFirst">A short explanation of why the top-ranked destination came first.</p>
+                </article>
+
+                <div class="results-overview-stats">
+                  <article class="score-tile">
+                    <span>Analyzed</span>
+                    <strong id="summaryTotalAnalyzed">0</strong>
+                  </article>
+                  <article class="score-tile">
+                    <span>Avg score</span>
+                    <strong id="summaryAverageScore">0.00</strong>
+                  </article>
+                  <article class="score-tile">
+                    <span>Avg confidence</span>
+                    <strong id="summaryAverageConfidence">0%</strong>
+                  </article>
+                  <article class="score-tile">
+                    <span>Trip style</span>
+                    <strong id="summaryTripStyle">Balanced Explorer</strong>
+                  </article>
+                </div>
+              </section>
+
+              <section class="recommendation-preview">
+                <article class="results-hero recommendation-card recommendation-card-stacked">
+                  <div class="results-hero-copy">
+                    <p class="eyebrow">Decision engine output</p>
+                    <div class="decision-heading">
+                      <div class="destination-lockup">
+                        <span class="destination-label">Destination selected</span>
+                        <h3 id="resultDestinationName">Tokyo</h3>
+                      </div>
+                      <span class="decision-badge" id="decisionPriority">High priority</span>
+                    </div>
+                    <p class="decision-explanation" id="decisionExplanation">Explanation text will appear here.</p>
+                    <div class="recommendation-copy">
+                      <p class="results-hero-headline" id="resultHeadline">Destination intelligence headline</p>
+                      <p id="resultOverview">Overview text will appear here.</p>
+                    </div>
+                  </div>
+                </article>
+
+                <section class="decision-summary-board">
+                  <article class="score-tile score-tile-primary">
+                    <span>Decision score</span>
+                    <strong id="decisionScoreValue">0.00</strong>
+                    <small id="decisionConfidence">0.00 confidence</small>
+                  </article>
+                  <article class="mini-metric">
+                    <span>Risk</span>
+                    <strong id="decisionRiskLevel">Low</strong>
+                  </article>
+                  <article class="mini-metric">
+                    <span>Trace</span>
+                    <strong id="decisionHistoryState">Stored</strong>
+                  </article>
+                  <article class="score-tile">
+                    <span>Destination</span>
+                    <strong id="scoreDestination">0%</strong>
+                  </article>
+                  <article class="score-tile">
+                    <span>Budget fit</span>
+                    <strong id="scoreBudget">0%</strong>
+                  </article>
+                  <article class="score-tile">
+                    <span>Local signal</span>
+                    <strong id="scoreLocal">0%</strong>
+                  </article>
+                  <article class="score-tile">
+                    <span>Safety</span>
+                    <strong id="scoreSafety">0%</strong>
+                  </article>
+                  <article class="score-tile">
+                    <span>Trip style</span>
+                    <strong id="scoreTripStyle">Balanced</strong>
+                  </article>
+                </section>
+              </section>
+
+              <article class="result-card result-card-wide workflow-shell">
+                <div class="card-head">
+                  <div>
+                    <p class="eyebrow">Reasoning workflow</p>
+                    <h4>Discover -&gt; Verify -&gt; Prioritize -&gt; Explain</h4>
+                  </div>
+                  <span>Explainable decision path</span>
+                </div>
+                <div class="workflow-grid" id="workflowSteps"></div>
+              </article>
+
+              <div class="results-grid results-grid-support">
+                <article class="result-card">
+                  <p class="eyebrow">Signals &amp; evidence</p>
+                  <div id="evidenceSignals" class="pill-cloud"></div>
+                </article>
+                <article class="result-card">
+                  <p class="eyebrow">Why it ranked</p>
+                  <div id="reasonSignals" class="stack-list"></div>
+                </article>
+                <article class="result-card">
+                  <p class="eyebrow">Sources used</p>
+                  <div id="sourcesUsed" class="pill-cloud"></div>
+                </article>
+                <article class="result-card">
+                  <p class="eyebrow">Itinerary hints</p>
+                  <div id="itineraryHintsList" class="stack-list"></div>
+                </article>
+                <article class="result-card">
+                  <p class="eyebrow">Grounded evidence</p>
+                  <div id="groundingEvidenceList" class="stack-list"></div>
+                </article>
+                <article class="result-card">
+                  <p class="eyebrow">Model diagnostics</p>
+                  <div id="modelFeatureList" class="stack-list"></div>
+                </article>
+              </div>
+
+              <div class="results-grid results-grid-verify">
+                <article class="result-card result-card-wide">
+                  <div class="card-head">
+                    <div>
+                      <p class="eyebrow">AI verification layer</p>
+                      <h4>How the engine validates the recommendation</h4>
+                    </div>
+                    <span class="pill" id="verificationFreshness">Seeded intelligence + local runtime</span>
+                  </div>
+                  <p id="verificationSummary">Verification summary will appear here.</p>
+                  <div class="verification-stats">
+                    <article class="score-tile">
+                      <span>Status</span>
+                      <strong id="verificationStatus">Pending</strong>
+                    </article>
+                    <article class="score-tile">
+                      <span>Trust score</span>
+                      <strong id="verificationTrustScore">0%</strong>
+                    </article>
+                  </div>
+                </article>
+
+                <article class="result-card">
+                  <p class="eyebrow">Verification citations</p>
+                  <div id="verificationCitations" class="stack-list"></div>
+                </article>
+
+                <article class="result-card">
+                  <p class="eyebrow">Signal ledger</p>
+                  <div id="verificationLedger" class="stack-list"></div>
+                </article>
+              </div>
+
+              <details class="debug-panel">
+                <summary>Trace and debug capsule</summary>
+                <div class="debug-grid">
+                  <article class="score-tile">
+                    <span>traceId</span>
+                    <strong id="traceIdValue">n/a</strong>
+                  </article>
+                  <article class="score-tile">
+                    <span>Decision engine</span>
+                    <strong id="debugDecisionEngineVersion">n/a</strong>
+                  </article>
+                  <article class="score-tile">
+                    <span>Response mode</span>
+                    <strong id="debugResponseMode">n/a</strong>
+                  </article>
+                  <article class="score-tile">
+                    <span>Seed recognition</span>
+                    <strong id="debugRecognized">n/a</strong>
+                  </article>
+                </div>
+              </details>
+
+              <div class="results-grid results-grid-content">
+                <article class="result-card result-card-wide">
+                  <p class="eyebrow">Summary</p>
+                  <h4>Why this trip works</h4>
+                  <p id="resultWhyWorks"></p>
+                  <p id="resultTravelFit"></p>
+                </article>
+
+                <article class="result-card">
+                  <p class="eyebrow">Top attractions</p>
+                  <div id="attractionsList" class="stack-list"></div>
+                </article>
+
+                <article class="result-card">
+                  <p class="eyebrow">Food &amp; cafes</p>
+                  <div id="foodList" class="stack-list"></div>
+                </article>
+
+                <article class="result-card">
+                  <p class="eyebrow">Local favorites</p>
+                  <div id="favoritesList" class="stack-list"></div>
+                </article>
+              </div>
+
+              <article class="result-card itinerary-shell">
+                <div class="card-head">
+                  <div>
+                    <p class="eyebrow">Day-wise itinerary</p>
+                    <h4>Recommended route arc</h4>
+                  </div>
+                  <span class="pill" id="resultBestTime"></span>
+                </div>
+                <div id="itineraryList" class="itinerary-list"></div>
+              </article>
+
+              <div class="results-grid results-grid-practical">
+                <article class="result-card">
+                  <p class="eyebrow">Budget guidance</p>
+                  <div id="budgetCard" class="stack-list"></div>
+                </article>
+                <article class="result-card">
+                  <p class="eyebrow">Safety &amp; risk</p>
+                  <div id="safetyCard" class="stack-list"></div>
+                </article>
+                <article class="result-card">
+                  <p class="eyebrow">Travel tips</p>
+                  <div id="tipsList" class="stack-list"></div>
+                </article>
+              </div>
+
+              <div class="results-grid results-grid-ai">
+                <article class="result-card result-card-wide">
+                  <div class="card-head">
+                    <div>
+                      <p class="eyebrow">AI mission brief</p>
+                      <h4 id="aiMissionTitle">Destination mission brief</h4>
+                    </div>
+                    <span class="pill" id="aiFocusStage">Discover</span>
+                  </div>
+                  <p id="aiMissionSummary">Generated mission summary will appear here.</p>
+                  <div class="agentic-meta-row">
+                    <span class="pill" id="aiBestMoment">Best moment</span>
+                    <span class="pill" id="aiGenerationMode">Local template generation</span>
+                  </div>
+                  <p class="agentic-note" id="aiMissionOperatorNote">Operator note will appear here.</p>
+                </article>
+
+                <article class="result-card">
+                  <p class="eyebrow">Agent playbook</p>
+                  <h4>What the engine would do next</h4>
+                  <div class="agentic-split">
+                    <div class="agentic-column">
+                      <h5>Next actions</h5>
+                      <div id="agentNextActions" class="stack-list"></div>
+                    </div>
+                    <div class="agentic-column">
+                      <h5>Verification</h5>
+                      <div id="agentVerificationChecklist" class="stack-list"></div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="result-card">
+                  <p class="eyebrow">Gen-AI memory layer</p>
+                  <h4 id="aiJournalTitle">Generated memory draft</h4>
+                  <p class="agentic-journal" id="aiJournalPreview">Memory preview will appear here.</p>
+                  <p class="agentic-share" id="aiShareableSummary">Shareable summary will appear here.</p>
+                  <div class="agentic-split">
+                    <div class="agentic-column">
+                      <h5>Replan triggers</h5>
+                      <div id="agentReplanTriggers" class="stack-list"></div>
+                    </div>
+                    <div class="agentic-column">
+                      <h5>Follow-up prompts</h5>
+                      <div id="agentFollowUpQuestions" class="stack-list"></div>
+                    </div>
+                  </div>
+                  <div id="aiMemoryMoments" class="pill-cloud"></div>
+                </article>
+
+                <article class="result-card result-card-wide replan-shell">
+                  <div class="card-head">
+                    <div>
+                      <p class="eyebrow">AI copilot replan</p>
+                      <h4>Refine this result with a natural-language instruction</h4>
+                    </div>
+                    <span class="pill" id="aiModelProvider">MindGrid local</span>
+                  </div>
+                  <p class="agentic-note" id="aiModelSummary">
+                    Model-ready reasoning is available locally. Use a follow-up instruction to replan without changing the rest of the brief by hand.
+                  </p>
+                  <form class="replan-form" id="replanForm">
+                    <label class="field">
+                      <span>Follow-up instruction</span>
+                      <textarea
+                        id="replanInstructionInput"
+                        rows="3"
+                        placeholder="Make this cheaper and more food-focused."
+                      ></textarea>
+                    </label>
+                    <div class="replan-chip-row" aria-label="Suggested replan prompts">
+                      <button type="button" class="replan-chip" data-replan-instruction="Make this cheaper and more food-focused.">Cheaper + food</button>
+                      <button type="button" class="replan-chip" data-replan-instruction="Make this slower and safer.">Safer + slower</button>
+                      <button type="button" class="replan-chip" data-replan-instruction="Upgrade this into a premium version.">Premium upgrade</button>
+                      <button type="button" class="replan-chip" data-replan-instruction="Keep it local and more authentic.">More local</button>
+                    </div>
+                    <div class="replan-actions">
+                      <button class="btn btn-primary" id="replanButton" type="submit">Run AI Replan</button>
+                      <span class="pill" id="aiModelMode">Local simulated llm</span>
+                    </div>
+                    <p class="form-status" id="replanStatus" aria-live="polite">
+                      Generate a recommendation first, then use this copilot to adapt it with follow-up instructions.
+                    </p>
+                  </form>
+                </article>
+
+                <article class="result-card">
+                  <p class="eyebrow">Calibration feedback</p>
+                  <h4>Help the confidence layer learn locally</h4>
+                  <form class="feedback-form" id="feedbackForm">
+                    <input type="hidden" id="feedbackVerdictInput" value="accepted">
+                    <div class="feedback-chip-row" aria-label="Feedback verdict">
+                      <button type="button" class="feedback-chip is-active" data-feedback-verdict="accepted">Useful</button>
+                      <button type="button" class="feedback-chip" data-feedback-verdict="replanned">Needs replan</button>
+                      <button type="button" class="feedback-chip" data-feedback-verdict="rejected">Not useful</button>
+                    </div>
+                    <label class="field">
+                      <span>Rating</span>
+                      <select id="feedbackRatingInput">
+                        <option value="5">5 - excellent fit</option>
+                        <option value="4">4 - mostly right</option>
+                        <option value="3" selected>3 - mixed</option>
+                        <option value="2">2 - weak fit</option>
+                        <option value="1">1 - poor fit</option>
+                      </select>
+                    </label>
+                    <label class="field">
+                      <span>Notes</span>
+                      <textarea
+                        id="feedbackNotesInput"
+                        rows="3"
+                        placeholder="Optional: what felt right or wrong about this result?"
+                      ></textarea>
+                    </label>
+                    <button class="btn btn-secondary" id="feedbackButton" type="submit">Save feedback</button>
+                    <p class="form-status" id="feedbackStatus" aria-live="polite">
+                      Generate a recommendation first, then save whether it felt right, needed replanning, or missed the brief.
+                    </p>
+                  </form>
+                </article>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="section reveal" id="compare">
+        <div class="section-heading">
+          <p class="eyebrow">Compare</p>
+          <h2>Rank multiple destinations without losing the why.</h2>
+          <p>Compare fit, confidence, safety, and reasoning differences under one shared brief.</p>
+        </div>
+
+        <div class="comparison-layout">
+          <form class="comparison-panel glass" id="comparisonForm">
+            <div class="control-header">
+              <h3>Compare destinations</h3>
+              <p>Enter 2 to 4 destinations separated by commas or line breaks.</p>
+            </div>
+
+            <div class="compare-chip-cloud" aria-label="Suggested comparison destinations">
+              <button type="button" class="compare-chip" data-compare-destination="Bangkok">Bangkok</button>
+              <button type="button" class="compare-chip" data-compare-destination="Tokyo">Tokyo</button>
+              <button type="button" class="compare-chip" data-compare-destination="Bali">Bali</button>
+              <button type="button" class="compare-chip" data-compare-destination="Dubai">Dubai</button>
+              <button type="button" class="compare-chip" data-compare-destination="Singapore">Singapore</button>
+              <button type="button" class="compare-chip" data-compare-destination="Paris">Paris</button>
+              <button type="button" class="compare-chip" data-compare-destination="Goa">Goa</button>
+            </div>
+
+            <label class="field">
+              <span>Destinations</span>
+              <textarea
+                id="comparisonDestinationsInput"
+                name="destinations"
+                rows="3"
+                placeholder="Tokyo, Bangkok, Singapore"
+                required
+              ></textarea>
+              <small class="field-help">Example: Tokyo, Bangkok, Singapore</small>
+            </label>
+
+            <div class="field-grid">
+              <label class="field">
+                <span>Budget</span>
+                <div class="budget-inline-group">
+                  <input name="budget" type="number" min="50" step="10" value="1800" required>
+                  <select name="currency" aria-label="Comparison budget currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="INR">INR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="SGD">SGD</option>
+                    <option value="AED">AED</option>
+                    <option value="THB">THB</option>
+                    <option value="IDR">IDR</option>
+                  </select>
+                </div>
+              </label>
+              <label class="field">
+                <span>Duration (days)</span>
+                <input name="duration" type="number" min="1" max="21" value="4" required>
+              </label>
+            </div>
+
+            <div class="field-grid">
+              <label class="field">
+                <span>Travel style</span>
+                <select name="travelStyle">
+                  <option>Balanced Explorer</option>
+                  <option>Food Scout</option>
+                  <option>Budget Hunter</option>
+                  <option>Luxury Escape</option>
+                  <option>Culture First</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Pace</span>
+                <select name="pace">
+                  <option value="balanced">Balanced</option>
+                  <option value="slow">Slow</option>
+                  <option value="fast">Fast</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="field">
+              <span>Interests</span>
+              <input
+                name="interests"
+                type="text"
+                value="food, culture, walkable, local"
+                placeholder="food, art, nightlife, scenic"
+              >
+            </label>
+
+            <button class="btn btn-primary" id="comparisonButton" type="submit">Compare Destinations</button>
+            <p class="form-status" id="comparisonStatus" aria-live="polite"></p>
+          </form>
+
+          <section class="comparison-shell glass" id="comparisonShell" data-state="empty">
+            <div class="comparison-state" id="comparisonEmpty">
+              <p class="eyebrow">Comparison ready</p>
+              <h3>Run one brief across multiple destinations.</h3>
+              <p>Compare score, confidence, safety, budget fit, local signal, and explainable ranking logic side by side.</p>
+            </div>
+
+            <div class="comparison-state" id="comparisonLoading" hidden>
+              <p class="eyebrow">Running comparison</p>
+              <div class="loading-stack">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="loading-steps" aria-hidden="true">
+                <span>Discover</span>
+                <span>Verify</span>
+                <span>Prioritize</span>
+                <span>Explain</span>
+              </div>
+              <p>MindGrid Voyager is evaluating the same trip brief across every selected destination.</p>
+            </div>
+
+            <div class="comparison-state" id="comparisonError" hidden>
+              <p class="eyebrow">Comparison issue</p>
+              <h3>Comparison request failed.</h3>
+              <p id="comparisonErrorMessage">Use 2 to 4 valid destinations and try again.</p>
+            </div>
+
+            <div class="comparison-state comparison-success" id="comparisonSuccess" hidden>
+              <article class="comparison-summary-card">
+                <div class="card-head">
+                  <div>
+                    <p class="eyebrow">Top ranked destination</p>
+                    <h4 id="comparisonTopDestination">Tokyo</h4>
+                  </div>
+                  <span class="decision-badge" id="comparisonTopPriority">High priority</span>
+                </div>
+                <p id="comparisonTopReason">A short explanation of why the top-ranked destination won this brief.</p>
+                <div class="comparison-summary-stats">
+                  <article class="score-tile">
+                    <span>Compared</span>
+                    <strong id="comparisonComparedCount">0</strong>
+                  </article>
+                  <article class="score-tile">
+                    <span>Avg score</span>
+                    <strong id="comparisonAverageScore">0.00</strong>
+                  </article>
+                  <article class="score-tile">
+                    <span>Avg confidence</span>
+                    <strong id="comparisonAverageConfidence">0%</strong>
+                  </article>
+                  <article class="score-tile">
+                    <span>Best for</span>
+                    <strong id="comparisonTopBestFor">Balanced trip</strong>
+                  </article>
+                </div>
+              </article>
+
+              <div class="comparison-ranked-grid" id="comparisonRankings"></div>
+
+              <article class="result-card result-card-wide comparison-matrix-card">
+                <div class="card-head">
+                  <div>
+                    <p class="eyebrow">Side-by-side reasoning</p>
+                    <h4>How the decision engine separates the options</h4>
+                  </div>
+                  <span>Compare signals, fit, and trust</span>
+                </div>
+                <div class="comparison-table-shell" id="comparisonMatrix"></div>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div class="comparison-support-grid">
+          <section class="history-panel glass">
+            <div class="card-head">
+              <div>
+                <p class="eyebrow">Local recommendation history</p>
+                <h4>Recent decision runs</h4>
+              </div>
+              <button class="btn btn-secondary btn-small" id="clearHistoryButton" type="button">Clear history</button>
+            </div>
+            <p class="history-note">
+              Saved only in local browser storage. Restore any single recommendation or comparison run instantly.
+            </p>
+            <div class="history-empty" id="historyEmpty">
+              <p>No local decision runs yet. Generate a recommendation or comparison to start building a traceable history.</p>
+            </div>
+            <div class="history-list" id="historyList"></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="section reveal" id="architecture">
+        <div class="section-heading">
+          <p class="eyebrow">Architecture</p>
+          <h2>A readable system behind the experience.</h2>
+          <p>The UI mirrors the backend pipeline so the product feels coherent from first glance to final result.</p>
+        </div>
+
+        <article class="architecture-panel glass">
+          <div class="card-head">
+            <div>
+              <p class="eyebrow">Agentic pipeline</p>
+              <h4>Discover -&gt; Verify -&gt; Prioritize -&gt; Explain</h4>
+            </div>
+            <span>Readable in under a minute</span>
+          </div>
+          <div class="architecture-flow">
+            <article class="architecture-stage">
+              <span>01</span>
+              <strong>Discover</strong>
+              <p>Seeded destination intelligence, local context, and source discovery establish the candidate profile.</p>
+            </article>
+            <article class="architecture-stage">
+              <span>02</span>
+              <strong>Verify</strong>
+              <p>Risk, confidence, and destination relevance decide whether the recommendation is actually trustworthy.</p>
+            </article>
+            <article class="architecture-stage">
+              <span>03</span>
+              <strong>Prioritize</strong>
+              <p>Budget fit, local signal, attractions, and itinerary logic compete to shape the final rank.</p>
+            </article>
+            <article class="architecture-stage">
+              <span>04</span>
+              <strong>Explain</strong>
+              <p>The UI surfaces decision score, evidence, workflow trace, and reasoning differences instead of hiding them.</p>
+            </article>
+          </div>
+          <p class="architecture-note">
+            Behind the scenes the orchestration layer coordinates source discovery, risk analysis,
+            prioritization, itinerary planning, and explainable recommendation generation.
+          </p>
+
+          <div class="architecture-flow architecture-metrics">
+            <article class="architecture-stage">
+              <span>Eval</span>
+              <strong id="benchmarkTop1">--</strong>
+              <p>Benchmark top-1 accuracy</p>
+            </article>
+            <article class="architecture-stage">
+              <span>Grounding</span>
+              <strong id="benchmarkGrounding">--</strong>
+              <p>Average evidence coverage</p>
+            </article>
+            <article class="architecture-stage">
+              <span>Calib</span>
+              <strong id="benchmarkCalibration">--</strong>
+              <p>Confidence calibration gap</p>
+            </article>
+            <article class="architecture-stage">
+              <span>Cases</span>
+              <strong id="benchmarkCases">--</strong>
+              <p>Offline benchmark scenarios</p>
+            </article>
+          </div>
+          <p class="architecture-note" id="benchmarkSummary">
+            Evaluation metrics will appear here once the local benchmark layer is loaded.
+          </p>
+        </article>
+
+        <div class="demo-shell" id="demo">
+          <div class="demo-layout">
+            <article class="demo-copy glass">
+              <p class="eyebrow">Demo request</p>
+              <h3>Keep the original live demo loop in the same visual system.</h3>
+              <ul class="summary-list">
+                <li><span>Demo requests stored</span><strong id="demoCount">0</strong></li>
+                <li><span>Recommendation requests stored</span><strong id="recommendationCount">0</strong></li>
+                <li><span>Persistence</span><strong>SQLite + JSON backup</strong></li>
+              </ul>
+              <p>
+                This keeps the product story practical: live forms, local persistence, and a clear upgrade path to real integrations.
+              </p>
+            </article>
+
+            <form class="demo-form glass" id="demoForm">
+              <div class="field-grid">
+                <label class="field">
+                  <span>Name</span>
+                  <input type="text" name="name" placeholder="Your name" required>
+                </label>
+                <label class="field">
+                  <span>Email</span>
+                  <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
+              </div>
+
+              <div class="field-grid">
+                <label class="field">
+                  <span>Destination</span>
+                  <input type="text" name="destination" placeholder="Paris, Tokyo, Goa...">
+                </label>
+                <label class="field">
+                  <span>Traveler profile</span>
+                  <select name="travelStyle">
+                    <option>Balanced Explorer</option>
+                    <option>Food Scout</option>
+                    <option>Budget Hunter</option>
+                    <option>Luxury Escape</option>
+                  </select>
+                </label>
+              </div>
+
+              <label class="field">
+                <span>What should the platform optimize for?</span>
+                <textarea
+                  name="notes"
+                  rows="5"
+                  placeholder="Example: optimize for cafes, safety, and low-friction neighborhood discovery."
+                ></textarea>
+              </label>
+
+              <button class="btn btn-primary" id="demoSubmitButton" type="submit">Submit Demo Request</button>
+              <p class="form-status" id="demoFormStatus" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>MindGrid Voyager</strong>
+        <p>A local-first AI exploration engine for destination intelligence, structured recommendations, and portfolio-grade product execution.</p>
+      </div>
+      <div>
+        <span>Built with plain HTML, CSS, JavaScript, Python, SQLite, and modular recommendation architecture.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="client_app.js" defer data-client-app="true"></script>
+</body>
+</html>
