@@ -39,6 +39,7 @@ data/*
 logs/*
 !logs/.gitkeep
 history/
+docs/screenshots/_test.png
 
 # Python packaging leftovers
 *.egg-info/

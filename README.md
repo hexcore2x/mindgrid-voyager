@@ -1,8 +1,16 @@
 # MindGrid Voyager
 
+![Tests](https://github.com/hexcore2x/mindgrid-voyager/actions/workflows/tests.yml/badge.svg)
+![License: MIT](https://img.shields.io/badge/license-MIT-7ecbff.svg)
+![Local-first](https://img.shields.io/badge/runtime-local--first-183454.svg)
+
 **One-line pitch**
 
 MindGrid Voyager is a local-first agentic AI decision engine for real-world travel exploration, built with Python, HTML, CSS, and JavaScript.
+
+![MindGrid Voyager social preview](./docs/social-preview.png)
+
+A GitHub Pages-ready static showcase page is included at [`docs/index.html`](./docs/index.html) if you want to attach a Website link to the repository later.
 
 ## Product Overview
 
@@ -352,15 +360,29 @@ Stores a local outcome signal for a recommendation, including:
 
 ## Screenshots
 
-Suggested screenshot placeholders for the GitHub README:
+The repo now includes reusable showcase assets for the GitHub README and repository social preview.
 
-- `docs/screenshots/hero-overview.png`
-- `docs/screenshots/recommendation-results.png`
-- `docs/screenshots/comparison-mode.png`
-- `docs/screenshots/history-panel.png`
-- `docs/screenshots/architecture-snapshot.png`
+Use [`docs/social-preview.png`](./docs/social-preview.png) as the repository social preview image in GitHub repository settings.
 
-These can be captured after starting the app locally.
+### Product Overview
+
+![Hero overview](./docs/screenshots/hero-overview.png)
+
+### Recommendation Results
+
+![Recommendation results](./docs/screenshots/recommendation-results.png)
+
+### Comparison Mode
+
+![Comparison mode](./docs/screenshots/comparison-mode.png)
+
+### History & Restore Flow
+
+![History panel](./docs/screenshots/history-panel.png)
+
+### Architecture Snapshot
+
+![Architecture snapshot](./docs/screenshots/architecture-snapshot.png)
 
 ## Repository Structure
 
